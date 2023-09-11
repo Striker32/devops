@@ -99,10 +99,6 @@ class customer():
             raise ExError("Неверный тип данных")
         self._sx = sx
         self.queue = []
-    def change_passport(self, passport):
-        return __change_passport(passport)
-    def __change_passsport (self, passport):
-        self._passport = passport
     def change_age(self, age):
         return self.__change_price(age)
     def __change_age (self, age):
