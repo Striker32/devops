@@ -99,7 +99,10 @@ class customer():
             raise ExError("Неверный тип данных")
         self._sx = sx
         self.queue = []
-
+    def change_passport(self, passport):
+        return __change_passport(passport)
+    def __change_passsport (self, passport):
+        self._passport = passport
     def change_age(self, age):
         return self.__change_price(age)
     def __change_age (self, age):
@@ -386,30 +389,3 @@ class EmployeeTerm(object):
 if __name__ == "__main__":
     EmployeeTerm().run()
 
-
-
-
-
-
-
-
-
-    """model1 = model("KrankX", "France", "Volvo", "St. Depardieu 86")
-    car1 = car("Izt car 404", "KrankX", "2020", "black", 2500000)
-    customer1 = customer("Petrov", "Andrey", "Vasilievich", "8728 0289 0038 748", "Moscow", "35", "Male")
-    employee1 = employee("Meletova", "Anna", "Dmitrievna", "6", "50000")
-    sale1 = car_sale("24.06.2021", "Meletova Anna Dmitrievna", "Izt car 404")
-    model1.change_adress("St. Depardieu 85")
-    print(customer1.full_name)
-    customer1.name1 = "Anton"
-    print(customer1.full_name)
-    print(customer1.queue)
-    sale1.salary_bonus(500)
-    sale1 + 300
-    sale1 - 200
-    customer2 = up_customer("Olegovich", "Andrey", "Vasilievich", "4105 2504 9150 1943", "Moscow", "40", "Male",2950612, 5)
-    customer2 + 10000
-    ad = down_customer("1", "1", "1", "1", "1", "1", "1")
-    print(ad._name1)
-    print(customer2.purchases)
-    print(sale1._bonus)"""
