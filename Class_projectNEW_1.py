@@ -59,6 +59,10 @@ class car():
         self._price = price
         self.queue = []
 
+    def change_passport(self, passport):
+        return __change_passport(passport)
+    def __change_passsport (self, passport):
+        self._passport = passport
     def change_price(self, nw):
         return self.__change_price(nw)
     def __change_price(self, nw):
